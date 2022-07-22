@@ -20,13 +20,34 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/public/style.css",
+              "node_modules/bootstrap/scss/bootstrap.scss",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css"
+            ],  
+
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",              
+              "src/public/lib/stardust.js", 
+              "src/public/lib/bootstrap.bundle.min.js", 
+              "src/public/lib/sn-bar-chart.js", 
+              "src/public/lib/sn-scatter-plot.js" ,
+              "src/public/lib/sn-mekko-chart.js", 
+              "src/public/lib/sn-line-chart.js", 
+              "src/public/lib/sn-combo-chart.js", 
+              "src/public/lib/sn-pie-chart.js", 
+              "src/public/lib/enigma.js", 
+              "src/public/lib/jquery.min.js", 
+              "src/public/index.js"
             ],
-            "scripts": []
+            "serviceWorker": true,
+            "ngswConfigPath": "ngsw-config.json"
           },
+
           "configurations": {
             "production": {
               "budgets": [
@@ -87,7 +108,8 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest"
             ],
             "styles": [
               "src/styles.css"
@@ -97,5 +119,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "c4444cde-0fb8-4ed7-9864-fda56c343a73"
   }
 }
