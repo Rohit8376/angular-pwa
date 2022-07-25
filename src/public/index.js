@@ -66,7 +66,7 @@ function connectLocal({ url, appId }) {
 async function run() { 
     const app = await connectLocal({
         url: 'qliksenseserver.exponentia.ai', 
-        appId:"b4f2b025-fbd8-4c71-bda1-d0e168370673"  
+        appId:"2a41a653-2299-489a-ace5-c89364c5336b"  
     });
     const n2 = n(app);
 
@@ -91,7 +91,7 @@ async function run() {
     }); 
      n2.render({
         element: document.querySelector('.objthree'),
-        id: '80235795-6fa6-436d-839f-416bfee6470f',
+        id: 'RrDK',
     }); 
 
 

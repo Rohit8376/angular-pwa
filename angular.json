@@ -42,7 +42,9 @@
               "src/public/lib/sn-pie-chart.js", 
               "src/public/lib/enigma.js", 
               "src/public/lib/jquery.min.js", 
-              "src/public/index.js"
+              "src/public/lib/ticket-generate.js",
+              "src/public/index.js",
+              "src/public/main.js"
             ],
             "serviceWorker": true,
             "ngswConfigPath": "ngsw-config.json"
@@ -53,13 +55,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "1mb",
+                  "maximumError": "10mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "1mb",
+                  "maximumError": "1mb"
                 }
               ],
               "fileReplacements": [

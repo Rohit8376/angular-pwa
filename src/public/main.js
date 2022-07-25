@@ -25,7 +25,7 @@ require(['js/qlik'], function (qlik) {
         console.log(reply)
     })
 
-      const app = qlik.openApp('b4f2b025-fbd8-4c71-bda1-d0e168370673', config);
+      const app = qlik.openApp('2a41a653-2299-489a-ace5-c89364c5336b', config);
       $('.objonetwo').click(function(data){    
         const obj_id = $(this).attr("data-obj"); 
         app.getObject(obj_id).then(function(model){
