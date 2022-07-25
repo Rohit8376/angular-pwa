@@ -19,14 +19,11 @@ export class AppComponent implements OnInit {
               private swUpdate: SwUpdate) {
     this.isOnline = false;
     this.modalVersion = false;
-  }
-
+  } 
   public ngOnInit(): void {
-    this.updateOnlineStatus();
-
+    this.updateOnlineStatus(); 
     window.addEventListener('online',  this.updateOnlineStatus.bind(this));
-    window.addEventListener('offline', this.updateOnlineStatus.bind(this));
-
+    window.addEventListener('offline', this.updateOnlineStatus.bind(this)); 
     if (this.swUpdate.isEnabled) {
       this.swUpdate.versionUpdates.pipe(
         filter((evt: any): evt is VersionReadyEvent => evt.type === 'VERSION_READY'),

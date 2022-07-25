@@ -1,4 +1,5 @@
 const express = require('express');
+const { LOG_INFO } = require('karma/lib/constants');
 const path = require('path');
 const app = express();
 app.use(express.static(__dirname + '/dist/pwa-app'));
